@@ -1,0 +1,101 @@
+body {
+    font-family: 'Minecraft', sans-serif;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url('img/fundodosite.jpg');
+    background-size: 100%; /* Mantém o background original */
+}
+
+header {
+    background-color: #34495e;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.enunciado {
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.enunciado-content {
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+}
+
+.enunciado h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.categoria {
+    margin: 40px 0;
+    text-align: center;
+    width: 80%;
+}
+
+.categoria h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ecf0f1;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.categoria-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.categoria-videos a {
+    transition: transform 0.3s ease;
+}
+
+.categoria-videos a:hover {
+    transform: scale(1.1);
+}
+
+.categoria-videos img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0.5;
+}
+.categoria-videos img:hover {
+    opacity: 1.0;
+}
+
+@media (max-width: 768px) {
+    .categoria-videos img {
+        width: 100%;
+    }
+}
